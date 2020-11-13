@@ -1,0 +1,61 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  @include set-bg($white);
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  padding: 1rem 4.5rem;
+  border-radius: 10rem;
+  box-shadow: 0 0 0 transparent;
+  position: relative;
+
+  transition: background-color $t-time linear;
+
+  &::before {
+    content: "";
+    border-radius: inherit;
+    background: inherit;
+    opacity: 0.4;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+    z-index: -1;
+    transform: scale3d(0.8, 0.5, 1);
+  }
+
+  &:hover {
+    @include set-bg($main-color);
+    animation: btn-hover 0.7s ease-in-out;
+
+    &::before {
+      animation: btn-hover-2 0.3s linear 0.6s;
+    }
+  }
+}
+
+@keyframes btn-hover {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 transparent;
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes btn-hover-2 {
+  to {
+    opacity: 0;
+    //transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

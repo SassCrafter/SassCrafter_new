@@ -1,0 +1,20 @@
+// Set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return $black;
+  } @else {
+    @return $white;
+  }
+}
+
+// Set bg
+@mixin set-bg($color) {
+  background: $color;
+  color: set-text-color($color);
+}
+
+// set bg image
+@mixin set-img-bg($path) {
+  background: url($path) no-repeat center center/cover;
+  background-attachment: fixed;
+}
