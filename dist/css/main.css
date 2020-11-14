@@ -259,9 +259,9 @@ img {
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   position: relative;
-  -webkit-transition: background-color 250ms linear;
-  -o-transition: background-color 250ms linear;
-  transition: background-color 250ms linear;
+  -webkit-transition: background-color 250ms linear, color 250ms linear;
+  -o-transition: background-color 250ms linear, color 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear;
 }
 
 .btn::before {

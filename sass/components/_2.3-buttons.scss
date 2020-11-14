@@ -10,7 +10,7 @@
   box-shadow: 0 0 0 transparent;
   position: relative;
 
-  transition: background-color $t-time linear;
+  transition: background-color $t-time linear, color $t-time linear;
 
   &::before {
     content: "";
@@ -28,7 +28,8 @@
 
   &:hover,
   &:focus {
-    @include set-bg($main-color);
+    background: $main-color;
+    color: #fff;
     animation: btn-hover 0.7s ease-in-out;
 
     &::before {
