@@ -23,7 +23,7 @@
     height: 0;
     overflow: hidden;
     position: fixed;
-    top: 0;
+    top: $nav-height;
     left: 0;
     text-align: center;
     display: flex;
@@ -64,5 +64,5 @@
 }
 
 .open + .nav-list {
-  height: 100vh;
+  height: calc(100vh - 6rem);
 }
