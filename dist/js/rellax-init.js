@@ -12,6 +12,7 @@ cd_inner.forEach(el => {
 let rellax = new Rellax(".rellax", {
     speed: -8,
     center: true,
+    breakpoints: [576, 768, 1201]
 });
 
 
