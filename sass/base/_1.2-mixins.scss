@@ -16,5 +16,4 @@
 // set bg image
 @mixin set-img-bg($path) {
   background: url($path) no-repeat center center/cover;
-  background-attachment: fixed;
 }

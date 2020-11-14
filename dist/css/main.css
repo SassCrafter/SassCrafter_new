@@ -371,26 +371,21 @@ img {
 
 .hero {
   background: url("../img/cd-bg/1.jpg") no-repeat center center/cover;
-  background-attachment: fixed;
 }
 
 .portfolio {
   background: url("../img/cd-bg/2.jpg") no-repeat center center/cover;
-  background-attachment: fixed;
 }
 
 .about {
   background: url("../img/cd-bg/3.jpg") no-repeat center center/cover;
-  background-attachment: fixed;
 }
 
 .blog {
   background: url("../img/cd-bg/4.jpg") no-repeat center center/cover;
-  background-attachment: fixed;
   background-position: 45% center;
 }
 
 .contact {
   background: url("../img/cd-bg/5.jpg") no-repeat center center/cover;
-  background-attachment: fixed;
 }
