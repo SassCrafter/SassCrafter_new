@@ -3,6 +3,7 @@ cd_inner.forEach(el => {
     el.classList.add("rellax");
     el.setAttribute("data-rellax-percentage", "1");
     el.setAttribute("data-rellax-zindex", "999");
+    el.setAttribute("data-rellax-mobile-speed", "-2");
 });
 
 
