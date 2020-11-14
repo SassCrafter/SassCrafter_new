@@ -26,7 +26,8 @@
     transform: scale3d(0.8, 0.5, 1);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     @include set-bg($main-color);
     animation: btn-hover 0.7s ease-in-out;
 
