@@ -11,6 +11,6 @@ cards.forEach(el => {
         cards.forEach(el => {
             el.classList.remove("projects-card-clicked");
         });
-        el.classList.add("projects-card-clicked");
+        el.classList.toggle("projects-card-clicked");
     });
 });
