@@ -2,7 +2,7 @@ window.onload = function() {
     let loader = document.querySelector(".preloader");
     setTimeout(function() {
         loader.parentNode.removeChild(loader);
-    }, 100);
+    }, 3000);
 }
 
 const cards = document.querySelectorAll(".projects-card");
