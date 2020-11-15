@@ -25,6 +25,7 @@
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   text-align: center;
+  //margin-top: 4rem;
 }
 
 .page-subtitle {
@@ -32,9 +33,9 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
-.m-top {
-  margin-top: $nav-height;
+.p-top {
+  padding-top: $nav-height + 10rem;
 }
