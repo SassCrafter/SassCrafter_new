@@ -1,0 +1,97 @@
+.projects {
+  padding: 10rem 0 2rem 0;
+
+  &-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+  }
+
+  &-card {
+    width: 100%;
+    height: auto;
+    min-height: 25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      filter: grayscale(1);
+      transition: filter $t-time linear;
+    }
+
+    &-title {
+      padding: 1rem 1.5rem;
+      font-size: 2rem;
+      font-family: $font-stack;
+      color: $white;
+      background: rgba(0, 0, 0, 0.6);
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      text-transform: capitalize;
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      transform: translateX(-100%);
+      transition: transform $t-time cubic-bezier(0.275, 0.485, 0.32, 1.055);
+    }
+
+    &-circle {
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      padding: 6rem 0;
+      position: absolute;
+      bottom: -60%;
+      right: -5rem;
+      overflow: hidden;
+      transform: scale(0);
+      transition: transform $t-time cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &-list {
+      margin-right: 2rem;
+      display: flex;
+      align-items: flex-start;
+      li {
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+
+      a {
+        color: #fff;
+        font-size: 1.6rem;
+        padding: 1rem;
+        transition: transform $t-time ease-in-out, color $t-time linear;
+
+        &:hover {
+          color: $main-color;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &:hover,
+    .projects-card-clicked {
+      .projects-card-img {
+        filter: grayscale(0);
+      }
+      .projects-card-title {
+        transform: translateX(0);
+      }
+      .projects-card-circle {
+        transform: scale(1);
+      }
+    }
+  }
+}

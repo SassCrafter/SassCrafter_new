@@ -18,3 +18,23 @@
   margin-bottom: 2rem;
   text-align: center;
 }
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: normal;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-subtitle {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.m-top {
+  margin-top: $nav-height;
+}
