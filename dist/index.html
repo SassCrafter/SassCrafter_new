@@ -12,6 +12,9 @@
     <!-- Aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Fullpage js -->
+    <link rel="stylesheet" href="./css/fullpage.css">
+
     <!-- Main styles -->
     <link rel="stylesheet" href="./css/main.css">
     <title>SassCrafter | Home</title>
@@ -58,91 +61,102 @@
     </nav>
     <!-- /.nav -->
 
-    <section class="cd-section hero">
-        <div class="container cd-section-content" data-aos="fade-up">
-            <div class="cd-section-inner">
-                <h2 class="title">Hello World, I'm Dima</h2>
-                <p class="lead">let's build awesome things</p>
+    <div class="section-nav">
+        <div class="section-nav-controll" id="arrow-top"><i class="fas fa-arrow-up"></i></div>
+        <div class="section-nav-controll" id="arrow-down"><i class="fas fa-arrow-down"></i></div>
+    </div>
 
-                <ul class="sm">
-                    <li class="sm-item">
-                        <a href="https://twitter.com/SassCrafter" target="_blank" class="sm-link">
-                            <span class="sm-prev">twitter</span>
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="sm-item">
-                        <a href="https://github.com/WebDevLite" target="_blank" class="sm-link">
-                            <span class="sm-prev">github</span>
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="sm-item">
-                        <a href="https://codepen.io/SassCrafter" target="_blank" class="sm-link">
-                            <span class="sm-prev">codepen</span>
-                            <i class="fab fa-codepen"></i>
-                        </a>
-                    </li>
-                    <li class="sm-item">
-                        <a href="#" target="_blank" class="sm-link">
-                            <span class="sm-prev">linkedin</span>
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
+    <main id="fullpage">
+        <section class="section cd-section hero">
+            <div class="container cd-section-content" data-aos="fade-up">
+                <div class="cd-section-inner">
+                    <h2 class="title">Hello World, I'm Dima</h2>
+                    <p class="lead">let's build awesome things</p>
+    
+                    <ul class="sm">
+                        <li class="sm-item">
+                            <a href="https://twitter.com/SassCrafter" target="_blank" class="sm-link">
+                                <span class="sm-prev">twitter</span>
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="sm-item">
+                            <a href="https://github.com/WebDevLite" target="_blank" class="sm-link">
+                                <span class="sm-prev">github</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="sm-item">
+                            <a href="https://codepen.io/SassCrafter" target="_blank" class="sm-link">
+                                <span class="sm-prev">codepen</span>
+                                <i class="fab fa-codepen"></i>
+                            </a>
+                        </li>
+                        <li class="sm-item">
+                            <a href="#" target="_blank" class="sm-link">
+                                <span class="sm-prev">linkedin</span>
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section class="cd-section portfolio">
-        <div class="container cd-section-content" data-aos="fade-up">
-            <div class="cd-section-inner">
-                <h2 class="title">portfolio</h2>
-                <h4 class="cd-section-subtitle">Digital solutions inspire</h4>
-                <a href="#" class="btn">discover</a>
+        </section>
+    
+        <!-- Portfolio -->
+        <section class="section cd-section portfolio" >
+            <div class="fp-bg container cd-section-content">
+                <div class="cd-section-inner">
+                    <h2 class="title">portfolio</h2>
+                    <h4 class="cd-section-subtitle">Digital solutions inspire</h4>
+                    <a href="#" class="btn">discover</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section class="cd-section about">
-        <div class="container cd-section-content" data-aos="fade-up">
-            <div class="cd-section-inner">
-                <h2 class="title">about me</h2>
-                <h4 class="cd-section-subtitle">inspired by purpose</h4>
-                <a href="about.html" class="btn">find out more</a>
+        </section>
+    
+        <!-- About -->
+        <section class="section cd-section about">
+            <div class="container cd-section-content" >
+                <div class="cd-section-inner">
+                    <h2 class="title">about me</h2>
+                    <h4 class="cd-section-subtitle">inspired by purpose</h4>
+                    <a href="about.html" class="btn">find out more</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Blog -->
-    <section class="cd-section blog">
-        <div class="container cd-section-content" data-aos="fade-up">
-            <div class="cd-section-inner">
-                <h2 class="title">blog</h2>
-                <h4 class="cd-section-subtitle">latest news</h4>
-                <a href="work.html" class="btn">read articles</a>
+        </section>
+    
+        <!-- Blog -->
+        <section class="section cd-section blog">
+            <div class="container cd-section-content" >
+                <div class="cd-section-inner">
+                    <h2 class="title">blog</h2>
+                    <h4 class="cd-section-subtitle">latest news</h4>
+                    <a href="work.html" class="btn">read articles</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="cd-section contact">
-        <div class="container cd-section-content" data-aos="fade-up">
-            <div class="cd-section-inner">
-                <h2 class="title">contact</h2>
-                <h4 class="cd-section-subtitle">get in touch</h4>
-                <a href="work.html" class="btn">find me</a>
+        </section>
+    
+        <!-- Contact -->
+        <section class="section cd-section contact">
+            <div class="container cd-section-content">
+                <div class="cd-section-inner">
+                    <h2 class="title">contact</h2>
+                    <h4 class="cd-section-subtitle">get in touch</h4>
+                    <a href="work.html" class="btn">find me</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Mobile toggle script -->
     <script src="./js/mobile-toggler.js"></script>
-    <!-- Rellax js -->
+    <!-- Fullpage js -->
+    <script src="./js/fullpage.min.js"></script>
+    <script src="./js/fullpage.extensions.min.js"></script>
+    <!-- Rellax js 
     <script src="./js/rellax.min.js"></script>
     <script src="./js/rellax-init.js"></script>
+    -->
     <!-- Aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/aos.js"></script>

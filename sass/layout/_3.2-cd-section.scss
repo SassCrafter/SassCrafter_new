@@ -40,9 +40,7 @@
 .hero {
   @include set-img-bg("../img/cd-bg/1.jpg");
 }
-.portfolio {
-  @include set-img-bg("../img/cd-bg/2.jpg");
-}
+
 .about {
   @include set-img-bg("../img/cd-bg/3.jpg");
 }
@@ -52,4 +50,40 @@
 }
 .contact {
   @include set-img-bg("../img/cd-bg/5.jpg");
+}
+
+.fp-bg {
+  @include set-img-bg("../img/cd-bg/2.jpg");
+}
+
+.section-nav {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 4rem;
+  z-index: 1000;
+
+  &-controll {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    @include set-bg($main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color $t-time linear;
+
+    &:first-child {
+      margin-bottom: 2rem;
+    }
+
+    &:hover {
+      background: $black;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
