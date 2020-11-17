@@ -35,13 +35,23 @@
     padding: 1rem 2.5rem;
     margin-bottom: 3rem;
   }
+
+  @include media("tablet") {
+    &-subtitle {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 .hero {
   @include set-img-bg("../img/cd-bg/1.jpg");
 }
 
-.about {
+.portfolio {
+  @include set-img-bg("../img/cd-bg/2.jpg");
+}
+
+.about-home {
   @include set-img-bg("../img/cd-bg/3.jpg");
 }
 .blog {
@@ -52,16 +62,13 @@
   @include set-img-bg("../img/cd-bg/5.jpg");
 }
 
-.fp-bg {
-  @include set-img-bg("../img/cd-bg/2.jpg");
-}
 
 .section-nav {
   display: none;
   position: fixed;
   top: 50%;
   right: 4rem;
-  z-index: 1000;
+  z-index: 500;
 
   &-controll {
     width: 4rem;
@@ -83,7 +90,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @include media("tablet") {
     display: block;
   }
 }

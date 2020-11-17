@@ -40,11 +40,14 @@
     }
 
     &-link {
+      display: inline-block;
       font-size: 3rem;
       text-transform: uppercase;
       color: $white;
       padding: 1rem;
-      transition: color $t-time linear;
+      transform: scaleY(0) translate3d(0,100%,0);
+      transform-origin: center bottom;
+      transition: color $t-time linear, transform $t-time ease-in-out $t-time;
 
       &:hover {
         color: $main-color;
@@ -54,6 +57,17 @@
       color: $main-color;
     }
   }
+  @include media("tablet") {
+    height: 10rem;
+
+    &-list {
+      top: 10rem;
+
+      &-link {
+        font-size: 5rem;
+      }
+    }
+}
 }
 
 .logo {
@@ -64,5 +78,8 @@
 }
 
 .open + .nav-list {
-  height: calc(100vh - 6rem);
+  height: 100vh;
+  .nav-list-link {
+    transform: scaleY(1) translate3d(0,0,0);
+  }
 }

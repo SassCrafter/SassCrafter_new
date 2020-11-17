@@ -1,14 +1,63 @@
-.about-me {
+.about {
   &-heading {
     font-size: 2.5rem;
     font-weight: normal;
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   &-subheading {
     font-size: 1.8rem;
+    font-weight: normal;
     text-align: center;
+    opacity: .8;
+    margin-bottom: 1rem;
+  }
+
+
+  &-icons {
+    margin-top: 8rem;
+    padding: 5rem 0;
+    text-align: center;
+
+
+    i {
+      color: $main-color;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &-title {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+    }
+
+  }
+
+
+  &-more {
+    p {
+      text-align: center;
+      font-size: 1.4rem;
+      opacity: .8;
+    }
+    &-text {
+      padding: 2rem;
+    }
+  }
+
+  @include media("tablet") {
+    &-heading {
+      font-size: 3.5rem;
+    }
+    &-subheading {
+      font-size: 2rem;
+      font-weight: normal;
+      max-width: 50rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

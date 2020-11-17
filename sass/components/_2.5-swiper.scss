@@ -1,0 +1,27 @@
+.swiper-container {
+    height: 28rem;
+    @include media("tablet") {
+        height: 60rem;
+    }
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: $white;
+    outline: none;
+}
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+}

@@ -12,6 +12,9 @@
     <!-- Aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <!-- Main styles -->
     <link rel="stylesheet" href="./css/main.css">
     <title>SassCrafter | Home</title>
@@ -59,12 +62,11 @@
     <!-- /.nav -->
 
 
-    <section class="about-me p-top">
+    <section class="about p-top">
         <div class="container">
             <h2 class="page-title">about me</h2>
             <p class="page-subtitle">inspired by purpose!</p>
-            <h4 class="about-me-heading">Hey, I'm Dima</h4>
-            <p class="about-me-subheading">I'm interested in web devolopment, especially in frontend spectrum. Huge fun of CSS, JS, Python and English literature</p>
+            
         </div>
     </section>
     
@@ -79,18 +81,49 @@
                 <h5 class="about-icons-title">functionally</h5>
             </div>
             <div class="grid-item">
-                <span class="about-icon">
-                    &#129668;</span>
+               <i class="fas fa-magic"></i>
+               <h5 class="about-icons-title">magicaly</h5>
+            </div>
+            <div class="grid-item">
+                <i class="fas fa-keyboard"></i>
+                <h5 class="about-icons-title">ambitious</h5>
             </div>
         </div>
+    </section>
+
+    <section class="slider about-more">
+            <div class="flex">
+                <div class="flex-left">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/about-me/city-1.jpeg" alt="" class="swiper-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/about-me/city-2.jpg" alt="" class="swiper-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/about-me/city-3.jpg" alt="" class="swiper-slide-img">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="flex-right about-more-text">
+                    <h4 class="about-heading">Hey, I'm Dima</h4>
+            <h5 class="about-subheading">I'm interested in web devolopment, especially in frontend spectrum. Huge fun of CSS, JS, Python and English literature.
+                    Driven by passion of learning something new and self development. </h5>
+                </div>
+            </div>
     </section>
 
 
     <!-- Mobile toggle script -->
     <script src="./js/mobile-toggler.js"></script>
-    <!-- Rellax js -->
-    <script src="./js/rellax.min.js"></script>
-    <script src="./js/rellax-init.js"></script>
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-init.js"></script>
     <!-- Aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/aos.js"></script>

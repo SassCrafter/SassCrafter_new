@@ -17,3 +17,12 @@
 @mixin set-img-bg($path) {
   background: url($path) no-repeat center center/cover;
 }
+
+
+@mixin media($size) {
+  @if ($size == "tablet") {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+}
