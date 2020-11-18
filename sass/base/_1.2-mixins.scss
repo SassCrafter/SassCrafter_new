@@ -25,4 +25,9 @@
       @content;
     }
   }
+  @if ($size == "pc") {
+    @media screen and (min-width: $pc) {
+      @content;
+    }
+  }
 }

@@ -8,13 +8,16 @@ window.onload = function() {
 
 // Fullpage
 let myFullPage = new fullpage('#fullpage', {
+    anchors: ['hero', 'portfolio', 'about-home', 'blog', 'contact'],
+    menu: '#section-nav',
+    recordHistory: false,
     autoScrolling: true,
     scrollingSpeed: 1400,
     controlArrows: true,
     loopTop: true,
     loopBottom: true,
-    parallax: true,
-    parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+    //parallax: true,
+    //parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 });
 
 // Controlls

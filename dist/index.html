@@ -36,10 +36,10 @@
     <!-- Nav -->
     <nav class="nav">
         <div class="container nav-content">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo hover">
                 <h1>SassCrafter</h1>
             </a>
-            <div class="mobile-toggler">
+            <div class="mobile-toggler hover">
                 <div class="mobile-toggler-line"></div>
             </div>
             <ul class="nav-list">
@@ -63,13 +63,45 @@
     </nav>
     <!-- /.nav -->
 
+    <!-- 
     <div class="section-nav">
-        <div class="section-nav-controll" id="arrow-top"><i class="fas fa-arrow-up"></i></div>
-        <div class="section-nav-controll" id="arrow-down"><i class="fas fa-arrow-down"></i></div>
+        <div class="section-nav-controll hover" id="arrow-top"><i class="fas fa-arrow-up"></i></div>
+        <div class="section-nav-controll hover" id="arrow-down"><i class="fas fa-arrow-down"></i></div>
+    </div>
+    -->
+
+    <div class="section-nav" id="section-nav">
+        
+        <a href="#hero">
+            <div class="section-nav-controll hover">
+                <span>Start</span>
+            </div>
+        </a>
+        <a href="#portfolio">
+            <div class="section-nav-controll hover">
+                <span>portfolio</span>
+            </div>
+        </a>
+        <a href="#about-home">
+            <div class="section-nav-controll hover">
+                <span>about me</span>
+            </div>
+        </a>
+        <a href="#blog">
+            <div class="section-nav-controll hover">
+                <span>blog</span>
+            </div>
+        </a>
+        <a href="#contact">
+            <div class="section-nav-controll hover">
+                <span>get in touch</span>
+            </div>
+        </a>
     </div>
 
+
     <main id="fullpage">
-        <section class="section cd-section hero">
+        <section class="section cd-section hero" data-menuanchor="hero">
             <div class="container cd-section-content" data-aos="fade-up">
                 <div class="cd-section-inner">
                     <h2 class="title">Hello World, I'm Dima</h2>
@@ -77,25 +109,25 @@
     
                     <ul class="sm">
                         <li class="sm-item">
-                            <a href="https://twitter.com/SassCrafter" target="_blank" class="sm-link">
+                            <a href="https://twitter.com/SassCrafter" target="_blank" class="sm-link hover">
                                 <span class="sm-prev">twitter</span>
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li class="sm-item">
-                            <a href="https://github.com/WebDevLite" target="_blank" class="sm-link">
+                            <a href="https://github.com/WebDevLite" target="_blank" class="sm-link hover">
                                 <span class="sm-prev">github</span>
                                 <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li class="sm-item">
-                            <a href="https://codepen.io/SassCrafter" target="_blank" class="sm-link">
+                            <a href="https://codepen.io/SassCrafter" target="_blank" class="sm-link hover">
                                 <span class="sm-prev">codepen</span>
                                 <i class="fab fa-codepen"></i>
                             </a>
                         </li>
                         <li class="sm-item">
-                            <a href="#" target="_blank" class="sm-link">
+                            <a href="#" target="_blank" class="sm-link hover">
                                 <span class="sm-prev">linkedin</span>
                                 <i class="fab fa-linkedin"></i>
                             </a>
@@ -106,45 +138,45 @@
         </section>
     
         <!-- Portfolio -->
-        <section class="section cd-section portfolio" >
+        <section class="section cd-section portfolio" data-menuanchor="portfolio">
             <div class="container cd-section-content">
                 <div class="cd-section-inner">
                     <h2 class="title">portfolio</h2>
                     <h4 class="cd-section-subtitle">Digital solutions inspire</h4>
-                    <a href="portfolio.html" class="btn">discover</a>
+                    <a href="portfolio.html" class="btn hover">discover</a>
                 </div>
             </div>
         </section>
     
         <!-- About -->
-        <section class="section cd-section about-home">
+        <section class="section cd-section about-home" data-menuanchor="about-home">
             <div class="container cd-section-content" >
                 <div class="cd-section-inner">
                     <h2 class="title">about me</h2>
                     <h4 class="cd-section-subtitle">inspired by purpose</h4>
-                    <a href="about.html" class="btn">find out more</a>
+                    <a href="about.html" class="btn hover">find out more</a>
                 </div>
             </div>
         </section>
     
         <!-- Blog -->
-        <section class="section cd-section blog">
+        <section class="section cd-section blog" data-menuanchor="blog">
             <div class="container cd-section-content" >
                 <div class="cd-section-inner">
                     <h2 class="title">blog</h2>
                     <h4 class="cd-section-subtitle">latest news</h4>
-                    <a href="work.html" class="btn">read articles</a>
+                    <a href="work.html" class="btn hover">read articles</a>
                 </div>
             </div>
         </section>
     
         <!-- Contact -->
-        <section class="section cd-section contact">
+        <section class="section cd-section contact" data-menuanchor="contact">
             <div class="container cd-section-content">
                 <div class="cd-section-inner">
                     <h2 class="title">contact</h2>
                     <h4 class="cd-section-subtitle">get in touch</h4>
-                    <a href="work.html" class="btn">find me</a>
+                    <a href="work.html" class="btn hover">find me</a>
                 </div>
             </div>
         </section>
