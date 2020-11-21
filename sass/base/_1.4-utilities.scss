@@ -1,7 +1,7 @@
 .container {
   max-width: $max-width;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 // Text
@@ -33,7 +33,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.3rem;
-  opacity: .8;
+  opacity: 0.8;
   margin-bottom: 8rem;
 }
 
@@ -45,7 +45,6 @@
 .bg-black {
   @include set-bg($black);
 }
-
 
 .grid {
   display: grid;
@@ -59,7 +58,6 @@
 
   &-left {
     min-width: 0;
-   
   }
 }
 

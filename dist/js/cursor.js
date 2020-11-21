@@ -6,13 +6,15 @@ const cursor = document.createElement("div");
 cursor.classList.add("cursor");
 root.appendChild(cursor);
 
+
 // Hoverable elements
 
 const hover = document.querySelectorAll(".hover");
 hover.forEach(el  => {
     el.addEventListener("mouseover", function() {
-        cursor.style.width = "80px";
-        cursor.style.height = "80px";
+        //getWidthHeight(e);
+        cursor.style.width = "60px";
+        cursor.style.height = "60px";
         cursor.style.background = "transparent";
         cursor.style.border = "1px solid #ffd800";
     });
@@ -23,17 +25,11 @@ hover.forEach(el  => {
         cursor.style.border = "none";
     });
 })
-/*
-const bgWhite = document.querySelectorAll(".bg-white");
-bgWhite.forEach(el => {
-    el.addEventListener("mouseover", function() {
-        cursor.style.background = "black";
-    });
-    el.addEventListener("mouseout", function() {
-        cursor.style.background = "white";
-    });
-});
-*/
+
+function getWidthHeight(element) {
+    console.log(element.offsetHeight);
+}
+
 
 
 root.addEventListener('mousemove', e => {
@@ -48,5 +44,4 @@ root.addEventListener('mousemove', e => {
 function setPosition(element, e, offset) {
     element.style.transform = `translate3d(${e.clientX - offset}px,${e.clientY - offset}px, 0)`;
 }
-
 

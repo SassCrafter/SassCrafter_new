@@ -8,7 +8,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
     left: 0;
@@ -44,22 +44,22 @@
 }
 
 .hero {
-  @include set-img-bg("../img/cd-bg/1.jpg");
+  @include set-img-bg("../img/cd-bg/home.jpg");
 }
 
 .portfolio {
-  @include set-img-bg("../img/cd-bg/2.jpg");
+  @include set-img-bg("../img/cd-bg/portfolio.jpg");
 }
 
 .about-home {
-  @include set-img-bg("../img/cd-bg/3.jpg");
+  @include set-img-bg("../img/cd-bg/about.jpg");
 }
 .blog {
-  @include set-img-bg("../img/cd-bg/4.jpg");
+  @include set-img-bg("../img/cd-bg/blog.jpg");
   background-position: 45% center;
 }
 .contact {
-  @include set-img-bg("../img/cd-bg/5.jpg");
+  @include set-img-bg("../img/cd-bg/contact.jpg");
 }
 
 /*
@@ -128,15 +128,14 @@
     border-radius: 50%;
     background: $white;
     position: absolute;
-    top: calc(50% - .5rem);
-    left: calc(50% - .5rem);
+    top: calc(50% - 0.5rem);
+    left: calc(50% - 0.5rem);
     transition: transform $t-time-2 ease-in-out;
   }
 
   &::after {
     top: calc(50% + 2rem);
   }
-
 
   &-controll {
     width: 3rem;
