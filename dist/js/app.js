@@ -1,8 +1,8 @@
-window.onload = function() {
+window.onload = function () {
     let loader = document.querySelector(".preloader");
-    setTimeout(function() {
+    setTimeout(function () {
         loader.parentNode.removeChild(loader);
-    }, 150);
+    }, 3000);
 }
 
 
@@ -24,11 +24,11 @@ let myFullPage = new fullpage('#fullpage', {
 const arrow_top = document.getElementById("arrow-top");
 const arrow_bot = document.getElementById("arrow-down");
 
-arrow_top.addEventListener("click", function() {
+arrow_top.addEventListener("click", function () {
     arrow_top.classList.add("hi");
     fullpage_api.moveSectionUp();
 });
-arrow_bot.addEventListener("click", function() {
+arrow_bot.addEventListener("click", function () {
     fullpage_api.moveSectionDown();
 });
 
@@ -37,7 +37,7 @@ arrow_bot.addEventListener("click", function() {
 
 const cards = document.querySelectorAll(".projects-card");
 cards.forEach(el => {
-    el.addEventListener("click", function() {
+    el.addEventListener("click", function () {
         cards.forEach(el => {
             el.classList.remove("projects-card-clicked");
         });
