@@ -225,7 +225,11 @@ img {
     -webkit-transform 250ms ease-in-out;
   transition: top 250ms linear 250ms, -webkit-transform 250ms ease-in-out;
   -o-transition: top 250ms linear 250ms, transform 250ms ease-in-out;
+  -webkit-transition: top 250ms linear 250ms,
+    -webkit-transform 250ms ease-in-out;
   transition: top 250ms linear 250ms, transform 250ms ease-in-out;
+  transition: top 250ms linear 250ms, transform 250ms ease-in-out,
+    -webkit-transform 250ms ease-in-out;
   transition: top 250ms linear 250ms, transform 250ms ease-in-out,
     -webkit-transform 250ms ease-in-out;
 }
@@ -252,7 +256,11 @@ img {
     -webkit-transform 250ms ease-in-out 250ms;
   transition: top 250ms linear, -webkit-transform 250ms ease-in-out 250ms;
   -o-transition: top 250ms linear, transform 250ms ease-in-out 250ms;
+  -webkit-transition: top 250ms linear,
+    -webkit-transform 250ms ease-in-out 250ms;
   transition: top 250ms linear, transform 250ms ease-in-out 250ms;
+  transition: top 250ms linear, transform 250ms ease-in-out 250ms,
+    -webkit-transform 250ms ease-in-out 250ms;
   transition: top 250ms linear, transform 250ms ease-in-out 250ms,
     -webkit-transform 250ms ease-in-out 250ms;
 }
@@ -328,6 +336,8 @@ img {
   transition: opacity 250ms linear, -webkit-transform 250ms linear;
   -o-transition: transform 250ms linear, opacity 250ms linear;
   transition: transform 250ms linear, opacity 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear,
+    -webkit-transform 250ms linear;
   transition: transform 250ms linear, opacity 250ms linear,
     -webkit-transform 250ms linear;
 }
@@ -711,7 +721,11 @@ img {
     -webkit-transform 250ms ease-in-out 250ms;
   transition: color 250ms linear, -webkit-transform 250ms ease-in-out 250ms;
   -o-transition: color 250ms linear, transform 250ms ease-in-out 250ms;
+  -webkit-transition: color 250ms linear,
+    -webkit-transform 250ms ease-in-out 250ms;
   transition: color 250ms linear, transform 250ms ease-in-out 250ms;
+  transition: color 250ms linear, transform 250ms ease-in-out 250ms,
+    -webkit-transform 250ms ease-in-out 250ms;
   transition: color 250ms linear, transform 250ms ease-in-out 250ms,
     -webkit-transform 250ms ease-in-out 250ms;
 }
@@ -927,6 +941,8 @@ img {
   transition: transform 500ms ease-in-out 100ms;
   transition: transform 500ms ease-in-out 100ms,
     -webkit-transform 500ms ease-in-out 100ms;
+  transition: transform 500ms ease-in-out 100ms,
+    -webkit-transform 500ms ease-in-out 100ms;
 }
 
 .section-nav-controll:hover span {
@@ -968,6 +984,8 @@ img {
   transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
   -o-transition: transform 250ms ease-in-out, opacity 250ms linear;
   transition: transform 250ms ease-in-out, opacity 250ms linear;
+  transition: transform 250ms ease-in-out, opacity 250ms linear,
+    -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, opacity 250ms linear,
     -webkit-transform 250ms ease-in-out;
 }
@@ -1036,7 +1054,11 @@ img {
     cubic-bezier(0.275, 0.485, 0.32, 1.055);
   transition: -webkit-transform 250ms cubic-bezier(0.275, 0.485, 0.32, 1.055);
   -o-transition: transform 250ms cubic-bezier(0.275, 0.485, 0.32, 1.055);
+  -webkit-transition: -webkit-transform 250ms
+    cubic-bezier(0.275, 0.485, 0.32, 1.055);
   transition: transform 250ms cubic-bezier(0.275, 0.485, 0.32, 1.055);
+  transition: transform 250ms cubic-bezier(0.275, 0.485, 0.32, 1.055),
+    -webkit-transform 250ms cubic-bezier(0.275, 0.485, 0.32, 1.055);
   transition: transform 250ms cubic-bezier(0.275, 0.485, 0.32, 1.055),
     -webkit-transform 250ms cubic-bezier(0.275, 0.485, 0.32, 1.055);
 }
@@ -1064,7 +1086,11 @@ img {
     cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: -webkit-transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -o-transition: transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: -webkit-transform 250ms
+    cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    -webkit-transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
     -webkit-transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -1091,6 +1117,8 @@ img {
   transition: color 250ms linear, -webkit-transform 250ms ease-in-out;
   -o-transition: transform 250ms ease-in-out, color 250ms linear;
   transition: transform 250ms ease-in-out, color 250ms linear;
+  transition: transform 250ms ease-in-out, color 250ms linear,
+    -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, color 250ms linear,
     -webkit-transform 250ms ease-in-out;
 }
