@@ -20,17 +20,6 @@ let myFullPage = new fullpage('#fullpage', {
     //parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 });
 
-// Controlls
-const arrow_top = document.getElementById("arrow-top");
-const arrow_bot = document.getElementById("arrow-down");
-
-arrow_top.addEventListener("click", function () {
-    arrow_top.classList.add("hi");
-    fullpage_api.moveSectionUp();
-});
-arrow_bot.addEventListener("click", function () {
-    fullpage_api.moveSectionDown();
-});
 
 
 
